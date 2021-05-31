@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PersonneFactory
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PersonneFactory\ here.\r\n\r\n\ @author\ (Jessica\ Bassil)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=personneType\ nom\ prenom\ matricule
+comment1.target=Personne\ createPersonne(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=2

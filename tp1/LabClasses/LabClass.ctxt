@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=LabClass
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LabClass\ here.\r\n\r\n\ @author\ (Jessica\ Bassil)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=numMaxEtudiants
+comment1.target=LabClass(int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LabClass\r\n
+comment2.params=etudiant
+comment2.target=boolean\ InscrireUnEtudiant(Etudiant)
+comment3.params=prof
+comment3.target=void\ ajouterUnProf(Prof)
+comment4.params=
+comment4.target=int\ NombreDEtudiants()
+comment5.params=
+comment5.target=void\ printList()
+comment6.params=map
+comment6.target=void\ printMyList(java.util.TreeMap)
+comment7.params=time
+comment7.target=void\ setTime(java.lang.String)
+comment8.params=roomCode
+comment8.target=void\ setRoomCode(java.lang.String)
+numComments=9

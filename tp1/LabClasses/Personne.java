@@ -1,4 +1,4 @@
-package question3;
+package LabClasses;
 
 import java.util.regex.*;
 import java.text.Normalizer;
@@ -10,14 +10,13 @@ import java.text.Normalizer;
  * @author à compléter
  * @see java.lang.String, java.lang.Math
  */
-public class AuditeurCNAM {
+abstract class Personne {
     /** l'attribut nom de chaque auditeur. */
     private String nom;
     /** l'attribut prenom de chaque auditeur. */
     private String prenom;
     /** l'attribut matricule de chaque auditeur. */
     private String matricule;
-
     /**
      * "Création", le constructeur d'un auditeur avec son nom, son prénom et son
      * matricule.
@@ -29,7 +28,8 @@ public class AuditeurCNAM {
      * @param matricule
      *            sur la carte d'inscription, près de la photo
      */
-    public AuditeurCNAM(String nom, String prenom, String matricule) {
+    public Personne(String nom, String prenom, String matricule) throws Exception{
+
         this.nom = nom;
         this.prenom = prenom;
         this.matricule = matricule;
@@ -63,7 +63,7 @@ public class AuditeurCNAM {
      * 
      * @return son nom
      */
-    public String nom() {
+    public String afficheNom() {
         return nom;// à compléter
     }
 
@@ -72,7 +72,7 @@ public class AuditeurCNAM {
      * 
      * @return son prénom
      */
-    public String prenom() {
+    public String affichePrenom() {
         return prenom;// à compléter
     }
 
@@ -81,7 +81,7 @@ public class AuditeurCNAM {
      * 
      * @return son matricule
      */
-    public String matricule() {
+    public String afficheMatricule() {
         return matricule;// à compléter
     }
 
@@ -94,7 +94,7 @@ public class AuditeurCNAM {
      */
     @Override
     public String toString() {
-        return nom() + " " + prenom() + " login : " + login();
+        return afficheNom() + " " + affichePrenom() + " login : " + login();
     }
 
 }

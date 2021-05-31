@@ -50,12 +50,22 @@ public class Picture {
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
     }
+    
+    public void makeInvisible(){
+        sun.makeInvisible();
+        wall.makeInvisible();
+        roof.makeInvisible();
+        window.makeInvisible();
+    }
+    
+    protected Square getWall(){return this.wall;}
+    protected Circle getSun() {return this.sun;}
 
     /**
      * Change this picture to black/white display
@@ -79,7 +89,7 @@ public class Picture {
             wall.changeColor("red");
             window.changeColor("black");
             roof.changeColor("green");
-            sun.changeColor("yellow");
+            sun.changeColor("blue");
         }
     }
 
